@@ -52,10 +52,10 @@ void Particle::postUpdate()
     radius = this->lerpVal(radius, destinationRadius, 0.2f);
 }
 
-void Particle::draw()
+void Particle::draw(ofColor drawColor)
 {
     this->drawLinesToNeighbors();
-    ofSetColor(col, 100);
+    ofSetColor( drawColor, /*col,*/ 150);
     ofCircle(pos.x, pos.y, radius);
 }
 

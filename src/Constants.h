@@ -21,4 +21,6 @@
 
 #define bbVolumeHistoryLength         720
 
+#define bbDefaultBgColor            ofColor(73,71,105)
+
 #endif

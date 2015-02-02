@@ -29,7 +29,7 @@ public:
     Particle(float i_radius, ofColor i_col, ofVec2f i_pos, ofVec2f i_vel, ofVec2f i_accel, int i_lifetime);
     void update();
     void postUpdate();
-    void draw();
+    void draw(ofColor drawColor);
     void drawLinesToNeighbors();
     
     std::vector<Particle *>neighbors;
